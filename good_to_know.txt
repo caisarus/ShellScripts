@@ -1,0 +1,5 @@
+$@ in scripts gets the list of arguments passed to it from $1
+accept standard input: "read -p "PROMPT" VARIABLE"
+$? contains the return code of the previously executed command
+command1 && command2 - second command executes only if first command is succesful
+command1 || command2 - second command executes only if first command is unsuccesful
