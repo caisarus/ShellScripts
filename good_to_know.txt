@@ -3,3 +3,23 @@ accept standard input: "read -p "PROMPT" VARIABLE"
 $? contains the return code of the previously executed command
 command1 && command2 - second command executes only if first command is succesful
 command1 || command2 - second command executes only if first command is unsuccesful
+$$ is the pid of the current shell script
+
+Wildcards
+* 0 or more characters
+? exactly one character
+[] - create a range of characters to search for ( [c[aeiou]nt]  )
+[!]not that character
+[a-g]* - all files which start with a thru g 
+Names character clases for predefined clases
+
+Logging
+logger in bash script
+
+#example of useful while loop
+while ping -c 1 app01 >/dev/null
+do
+	echo "app1 still up..."
+	sleep 5
+done
+echo "Continuing with rest of script"
